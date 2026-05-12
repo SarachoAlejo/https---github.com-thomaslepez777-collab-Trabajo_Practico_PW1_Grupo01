@@ -1,0 +1,140 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005c84;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6rem;
+    overflow-y: visible;
+}
+
+h1 {
+    color: #005c84;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+form {
+    background: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 50rem;
+}
+
+.metodos-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.opcion-pago {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    color: #1a3a4a;
+    cursor: pointer;
+}
+
+
+.info-pago {
+    display: none;
+    background: #f0f4f7;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border-left: 0.4rem solid #005c84;
+}
+
+#radio-tarjeta:checked~#form-tarjeta,
+#radio-transferencia:checked~#info-transferencia,
+#radio-efectivo:checked~#info-efectivo,
+#radio-billetera:checked~#info-billetera {
+    display: block;
+}
+
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.btn-confirmar {
+    display: block;
+    width: 100%;
+    background: #005c84;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover {
+    background: #00a8e8;
+}
+
+.btn-atras {
+    margin-top: 3rem;
+    background: #df0b0b;
+    color: white;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.btn-atras:hover {
+    background: #00a8e8;
+}

@@ -1,0 +1,160 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: #005c84;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    color: #005c84;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.avion-layout {
+    background: #e9ecef;
+    padding: 4rem 3rem;
+    border-radius: 8rem 8rem 2rem 2rem;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.fila-asientos {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+
+.bloque-asientos {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.pasillo {
+    width: 4rem;
+}
+
+.input-asiento {
+    display: none;
+}
+
+.asiento {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.disponible {
+    background: #28a745;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ocupado {
+    background: #dc3545;
+    cursor: not-allowed;
+}
+
+.input-asiento:checked+.disponible {
+    background: #005c84;
+    border: 0.3rem solid #00a8e8;
+}
+
+.btn-continuar {
+    margin-top: 3rem;
+    background: #005c84;
+    color: white;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.btn-continuar:hover {
+    background: #00a8e8;
+}
+
+.btn-atras {
+    margin-top: 3rem;
+    background: #df0b0b;
+    color: white;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.btn-atras:hover {
+    background: #00a8e8;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.leyenda{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.item-leyenda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cuadro{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.verde{
+    background-color: #28a745;
+}
+
+.rojo{
+    background-color: #dc3545;
+}
